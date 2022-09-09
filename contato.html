@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilos.css">
+        <title>F1 - Contato</title>
+    </head>
+
+    <body>
+        <nav>
+                <div class="container clearfix">
+                    <h1>
+                        <a href="index.html">
+                            <img class="logotipo" src="img/logo.svg" alt="Meu Logotipo">
+                        </a> 
+                    </h1>
+                    <ul>
+                        <li>
+                            <a href="servicos.html">serviços</a>
+                        </li>
+                        <li>
+                            <a href="contato.html">contato</a>
+                        </li>
+                        <li>
+                            <a href="produtos.html">produtos</a>
+                        </li>
+                        <li>
+                            <a href="index.html">início</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <header>
+                <div class="container clearfix">
+                    <img src="img/SI_439_formula1_thumb.webp" alt="formula 1">
+                </div>
+            </header>
+
+        <main>
+            <div class="container clearfix">
+                <div class="col-12">
+                    <form id="contato">
+                        <label for="nome">Informe seu Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Informe seu Nome" required="true">
+
+                        <label for="email">Informe seu E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Informe seu E-mail" required="true">
+
+                        <label>Informe sua Turma</label>
+                        <div class="form-group">
+                            <input type="radio" name="turma" id="turma_1A"
+                                value="1A" checked>
+                            <label for="turma_1A">1A</label>
+                            <input type="radio" name="turma" id="turma_1B"
+                                value="1B" checked>
+                            <label for="turma_1A">1B</label>
+                        </div>
+                        
+                        <label for="nome">Motivo</label>
+                        <select name="motivo" id="motivo" required>
+                            <option value="">Selecione o Motivo</option>
+                            <option value="duvida">Dúvida</option>
+                            <option value="sugestao">Sugestão</option>
+                            <option value="problema">Relatar Problema</option>
+                            <option value="outro">Outro</option>
+                        </select>
+
+                        <label for="mensagem">Informe sua Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+                        
+                        <button type="submit">Enviar</button>
+                        <p class="mensagem"></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+                <div class="container clearfix">
+                    <div class="col-3">
+                        <h3>PRINCIPAIS CORRIDAS</h3>
+                        <ul>
+                            <li>
+                                F1
+                            </li>
+                            <li>    
+                                MOTOGP
+                            </li>
+                            <li>
+                                INDY
+                            </li>
+                            <li>
+                                FE
+                            </li>
+                    </ul>
+                    </div>
+        
+                    <div class="col-3">
+                        <h3>PRINCIPAIS VENCEDORES F1</h3>
+                        <ul>
+                            <li>
+                                LEWIS HAMILTON
+                            </li>
+                            <li>
+                                MICHAEL SCHUMACHER
+                            </li>
+                            <li>
+                                SEBASTIAN VETTEL
+                            </li> 
+                            <li>
+                                ALAIN PROST
+                            </li>                     
+                        </ul>
+                    </div>
+        
+                    <div class="col-3">
+                        <h3>OUTRAS CATEGORIAS</h3>
+                        <ul>
+                            <li>
+                                DTM
+                            </li>
+                            <li>
+                                ENDURANCE
+                            </li>
+                            <li>
+                                ESPORTS
+                            </li>
+                            <li>
+                                FÓRMULA 3
+                            </li>
+                        </ul>
+                    </div>
+        
+                    <div class="col-3">
+                            <h3>CONTATO</h3>
+                            <ul> 
+                                <li>
+                                    TWITTER
+                                </li>
+                                <li>
+                                    YOUTUBE
+                                </li>
+                                <li>
+                                    INSTAGRAM
+                                </li>
+                                <li>
+                                    FACEBOOK
+                                </li>
+                            </ul>
+                    </div>
+
+            </div>
+
+            <div class="container clearfix center rodape">
+                <p class="centralizar">
+                    Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira
+                </p>
+
+                <p class="centralizar">
+                    Rodovia SC 135, km 125 - Bairro Campo Experimental - CEP 89564-590 - Videira - SC - Fone: (49) 3533-4900
+                </p>
+            </div>
+
+            <script src="js/main.js" type="text/javascript"></script>
+            <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("3TdD74kVsb0Ve3UR6");
+            })();
+            </script>
+
+        </footer>
+    </body>
+</html>
